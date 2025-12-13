@@ -10,14 +10,14 @@ Dataset: Adidas US Sales Datasets
 link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-dataset
 
 ---
-### จุดประสงค์จากการวิเคราะห์
+## จุดประสงค์จากการวิเคราะห์
 
 * เพื่อทำความเข้าใจปัจจัยที่ส่งผลต่อยอดขายรวม (Total Sales Drivers)
 * เพื่อประเมินประสิทธิภาพของโมเดลที่สร้างขึ้น (Model Performance Evaluation)
 * เพื่อระบุแนวโน้มเชิงธุรกิจและ Insight สำคัญ
 ---
 
-### Modelที่ใช้การทำนายในครั้งนี้
+## Modelที่ใช้การทำนายในครั้งนี้
 
 ใช้ Ridge Regression ในการทำนาย เนื่องจาก
 * ให้การทำนายที่เสถียรกว่า Linear Regression เพราะไม่ให้ Coefficient ใด่โดดเด่นจนเกินไป
@@ -26,7 +26,7 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * ตีความ Coefficients ได้ง่ายกว่า Lasso
 ---
 
-### Hypothesis
+## Hypothesis
 
 H0 (Null Hypothesis): แต่ละช่องทางขายไม่มีผลแตกต่างกันต่อ Total Sales
 * H0: การขาย In-store, Online, Outlet ให้ยอดขายรวมเท่ากันโดยไม่มีความแตกต่างอย่างมีนัยสำคัญ
@@ -34,9 +34,18 @@ H1 (Alternative Hypothesis): ช่องทางขายมีผลแตก
 * H1: อย่างน้อยหนึ่งช่องทางขายมีผลต่อ Total Sales แตกต่างจากช่องทางอื่น
 ---
 
-### Preprocessing Data
+## Preprocessing Data
 
-#### กำหนด Target & Features
+### กำหนด Target & Features
 
 * Target: Total Sales
 * Features: 'Price per Unit', 'Units Sold', 'Sales Method'
+
+### import OneHotEncoder
+
+เพื่อลดความเสี่ยงที่ Model จะเข้าใจผิดระหว่างข้อมูลประเภท Category และข้อมูลประเภท numeric
+
+โดยกำหนดว่า
+
+* Column ไหนเป็นตัวเลข = ไม่ต้องเข้ารหัส One-Hot
+* Column ไหนเป็นตัวหนังสือ = ต้องเข้ารหัส One-Hot
