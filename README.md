@@ -47,4 +47,4 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * random_state=42 ทำให้ผลลัพธ์เหมือนเดิมทุกครั้ง
 
 ## Build Model
-Ridge with Polynomial (numeric-only) + OneHot (categorical)
+## Ridge with Polynomial (numeric-only) + OneHot (categorical)
