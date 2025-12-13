@@ -24,7 +24,7 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * เหมาะเมื่อมีฟีเจอร์ One-Hot
 * ตีความ Coefficients ได้ง่ายกว่า Lasso
 
-## EDA
+## ⚙️ EDA
 ### วิเคราะห์ Correlation Matrix
 
 <img width="398" height="317" alt="Corr Heatmap" src="https://github.com/user-attachments/assets/19c15fa9-249b-4642-9578-9ae182faa048" />
