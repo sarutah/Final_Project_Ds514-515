@@ -4,8 +4,7 @@ Adidas US Sales Datasets
 Dataset: Adidas US Sales Datasets
 link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-dataset
 
-จาก dataset มีจุดประสงค์หลักคือต้องการรู้ว่า "ปัจจัยใดมีผลต่อยอดขายรวมมากที่สุด" และ
-Model สามารถทำนาย Total Sales จาก 'Price per Unit', 'Units Sold', 'Sales Method' เพราะเป็นตัวแปรที่ประกอบกันเป็นยอดขายโดยตรง
+จาก dataset มีจุดประสงค์หลักคือต้องการรู้ว่า "ปัจจัยใดมีผลต่อยอดขายรวมมากที่สุด" 
 
 ### จุดประสงค์จากการวิเคราะห์
 
