@@ -76,7 +76,6 @@ test_rmse  = np.sqrt(mean_squared_error(y_test, y_test_pred))
 print(f"Train R2: {train_r2:.4f} | Test R2: {test_r2:.4f}")
 print(f"Train RMSE: {train_rmse:.4f} | Test RMSE: {test_rmse:.4f}")
 ```
-----
 ## Coefficients
 * ดึง preprocessor ออกมาจาก pipeline
 * ดึงชื่อฟีเจอร์ฝั่ง numeric หลัง PolynomialFeatures
@@ -86,3 +85,11 @@ print(f"Train RMSE: {train_rmse:.4f} | Test RMSE: {test_rmse:.4f}")
 * สร้างตารางค่า coefficient
 * เรียงลำดับจากผลกระทบมาก → น้อย (ใช้ absolute value)
 * แสดงผล
+
+### สรุป Insight จาก Coefficients
+
+1. ปัจจัยด้าน “ราคา” และ “จำนวนหน่วยขาย” ส่งผลบวกต่อรายได้ตามคาด ราคาต่อหน่วยสูงมีแนวโน้มเชื่อมโยงกับสินค้า high-value ที่สร้างรายได้รวมสูง
+2. กลยุทธ์ช่องทางขายมีผลต่อรายได้ In-store สร้างรายได้สูงที่สุด Online และ Outlet มียอดขายรวมลดลงอย่างมากเมื่อเทียบกับ baseline
+3. In-store เป็นช่องทางที่มีศักยภาพสร้าง Total Sales สูงที่สุด (แต่ไม่แสดงในตารางเพราะตอนตั้ง OneHotEncoder(drop=first))
+
+## EDA
