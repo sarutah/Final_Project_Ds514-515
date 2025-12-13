@@ -60,7 +60,8 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 
 ## Evaluate Best Model
 เปรียบเทียบ Train Test เพื่อตรวจจับ Overfit
----
+
+'''python
 from sklearn.metrics import r2_score, mean_squared_error
 import numpy as np
 
@@ -76,3 +77,12 @@ print(f"Train R2: {train_r2:.4f} | Test R2: {test_r2:.4f}")
 print(f"Train RMSE: {train_rmse:.4f} | Test RMSE: {test_rmse:.4f}")
 
 ----
+## Coefficients
+* ดึง preprocessor ออกมาจาก pipeline
+* ดึงชื่อฟีเจอร์ฝั่ง numeric หลัง PolynomialFeatures
+* ดึงชื่อฟีเจอร์ฝั่ง categorical หลัง OneHotEncoder
+* รวมชื่อฟีเจอร์ทั้งหมดตามลำดับใน matrix ที่ส่งเข้า Ridge
+* ดึง coefficients ของ Ridge
+* สร้างตารางค่า coefficient
+* เรียงลำดับจากผลกระทบมาก → น้อย (ใช้ absolute value)
+* แสดงผล
