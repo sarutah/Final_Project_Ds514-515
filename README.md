@@ -1,10 +1,11 @@
 # Data science
 Adidas US Sales Datasets
 -----------------------------------------------------------------------------------------
+โครงการนี้เป็นส่วนหนึ่งของรายวิชา DS512/DS513 Data Analytics และ DS514/DS515 Data Science โดยมีวัตถุประสงค์หลัก
+คือต้องการรู้ว่า "ปัจจัยใดมีผลต่อยอดขายรวมมากที่สุด"
+
 Dataset: Adidas US Sales Datasets
 link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-dataset
-
-จาก dataset มีจุดประสงค์หลักคือต้องการรู้ว่า "ปัจจัยใดมีผลต่อยอดขายรวมมากที่สุด" 
 
 ### จุดประสงค์จากการวิเคราะห์
 
