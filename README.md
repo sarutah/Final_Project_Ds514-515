@@ -5,6 +5,7 @@
 คือต้องการรู้ว่า "ปัจจัยใดมีผลต่อยอดขายรวมมากที่สุด"
 
 Dataset: Adidas US Sales Datasets
+
 link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-dataset
 
 -----------------------------------------------------------------------------------------
