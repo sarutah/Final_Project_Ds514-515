@@ -24,13 +24,6 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * เหมาะเมื่อมีฟีเจอร์ One-Hot
 * ตีความ Coefficients ได้ง่ายกว่า Lasso
 
-## Hypothesis
-
-H0 (Null Hypothesis): แต่ละช่องทางขายไม่มีผลแตกต่างกันต่อ Total Sales
-* H0: การขาย In-store, Online, Outlet ให้ยอดขายรวมเท่ากันโดยไม่มีความแตกต่างอย่างมีนัยสำคัญ
-H1 (Alternative Hypothesis): ช่องทางขายมีผลแตกต่างกันต่อ Total Sales
-* H1: อย่างน้อยหนึ่งช่องทางขายมีผลต่อ Total Sales แตกต่างจากช่องทางอื่น
-
 ## Preprocessing Data
 
 ### กำหนด Target & Features
@@ -46,3 +39,9 @@ H1 (Alternative Hypothesis): ช่องทางขายมีผลแตก
 
 * Column ไหนเป็นตัวเลข = ไม่ต้องเข้ารหัส One-Hot
 * Column ไหนเป็นตัวหนังสือ = ต้องเข้ารหัส One-Hot
+
+Train-Test Split
+
+* 80% สำหรับ train
+* 20% สำหรับ test
+* random_state=42 ทำให้ผลลัพธ์เหมือนเดิมทุกครั้ง
