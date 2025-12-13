@@ -21,3 +21,10 @@ Model สามารถทำนาย Total Sales จาก 'Price per Unit', 
 * เหมาะเมื่อมีฟีเจอร์ One-Hot
 * ตีความ Coefficients ได้ง่ายกว่า Lasso
 
+### Hypothesis
+
+H0 (Null Hypothesis): แต่ละช่องทางขายไม่มีผลแตกต่างกันต่อ Total Sales
+* H0: การขาย In-store, Online, Outlet ให้ยอดขายรวมเท่ากันโดยไม่มีความแตกต่างอย่างมีนัยสำคัญ
+H1 (Alternative Hypothesis): ช่องทางขายมีผลแตกต่างกันต่อ Total Sales
+* H1: อย่างน้อยหนึ่งช่องทางขายมีผลต่อ Total Sales แตกต่างจากช่องทางอื่น
+
