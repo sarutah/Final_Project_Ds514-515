@@ -16,13 +16,26 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * เพื่อประเมินประสิทธิภาพของโมเดลที่สร้างขึ้น (Model Performance Evaluation)
 * เพื่อระบุแนวโน้มเชิงธุรกิจและ Insight สำคัญ
 
-## Modelที่ใช้การทำนายในครั้งนี้
+## Model ที่ใช้การทำนายในครั้งนี้
 
 ใช้ Ridge Regression ในการทำนาย เนื่องจาก
 * ให้การทำนายที่เสถียรกว่า Linear Regression เพราะไม่ให้ Coefficient ใด่โดดเด่นจนเกินไป
 * ป้องกันการ overfitting
 * เหมาะเมื่อมีฟีเจอร์ One-Hot
 * ตีความ Coefficients ได้ง่ายกว่า Lasso
+
+## EDA
+### วิเคราะห์ Correlation Matrix
+"pic"
+
+### Insight สิ่งที่ได้จากกราฟ
+
+1. Total Sales มีความสัมพันธ์สูงมากกับ Units Sold (0.91) หมายความว่าปริมาณขายคือ driver สำคัญที่สุด
+2. จากความสัมพันธ์ของ Price per Unit กับ Total Sales ทำให้เห็นว่า ราคาแพงขึ้นไม่ได้แปลว่ายอดขายรวมสูงขึ้นเสมอ ต้องขึ้นกับ Units Sold เป็นปัจจัยหลัก
+3. Total Sales มีความสัมพันธ์สูงกับ Operating Profit
+
+### ยอดขายตามช่องทางการขาย
+"pic"
 
 ## Preprocessing Data
 
@@ -91,5 +104,3 @@ print(f"Train RMSE: {train_rmse:.4f} | Test RMSE: {test_rmse:.4f}")
 1. ปัจจัยด้าน “ราคา” และ “จำนวนหน่วยขาย” ส่งผลบวกต่อรายได้ตามคาดการณ์
 2. กลยุทธ์ช่องทางขายมีผลต่อรายได้ In-store สร้างรายได้สูงที่สุด Online และ Outlet มียอดขายน้อยกว่าเมื่อเทียบกับ baseline
 3. In-store เป็นช่องทางที่มีศักยภาพสร้าง Total Sales สูงที่สุด (แต่ไม่แสดงในตารางเพราะตอนตั้ง OneHotEncoder(drop=first))
-
-## EDA
