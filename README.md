@@ -1,4 +1,4 @@
-# Data scinnce
+# Data science
 Adidas US Sales Datasets
 -----------------------------------------------------------------------------------------
 Dataset: Adidas US Sales Datasets
