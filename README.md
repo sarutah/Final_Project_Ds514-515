@@ -16,8 +16,8 @@ Model สามารถทำนาย Total Sales จาก 'Price per Unit', 
 Modelที่ใช้การทำนายในครั้งนี้
 
 ใช้ Ridge Regression ในการทำนาย เนื่องจาก
-ให้การทำนายที่เสถียรกว่า Linear Regression เพราะไม่ให้ Coefficient ใด่โดดเด่นจนเกินไป
-ป้องกันการ overfitting
-เหมาะเมื่อมีฟีเจอร์ One-Hot
-ตีความ Coefficients ได้ง่ายกว่า Lasso
+* ให้การทำนายที่เสถียรกว่า Linear Regression เพราะไม่ให้ Coefficient ใด่โดดเด่นจนเกินไป
+* ป้องกันการ overfitting
+* เหมาะเมื่อมีฟีเจอร์ One-Hot
+* ตีความ Coefficients ได้ง่ายกว่า Lasso
 
