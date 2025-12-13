@@ -26,7 +26,9 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 
 ## EDA
 ### วิเคราะห์ Correlation Matrix
-"pic"
+
+<img width="398" height="317" alt="Corr Heatmap" src="https://github.com/user-attachments/assets/19c15fa9-249b-4642-9578-9ae182faa048" />
+
 
 ### Insight สิ่งที่ได้จากกราฟ
 
@@ -35,7 +37,9 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 3. Total Sales มีความสัมพันธ์สูงกับ Operating Profit
 
 ### ยอดขายตามช่องทางการขาย
-"pic"
+
+<img width="337" height="238" alt="Sales medthod_colab" src="https://github.com/user-attachments/assets/cd4ce83f-b7ca-4a28-869b-dfde625f58cd" />
+
 
 ## Preprocessing Data
 
@@ -89,6 +93,13 @@ test_rmse  = np.sqrt(mean_squared_error(y_test, y_test_pred))
 print(f"Train R2: {train_r2:.4f} | Test R2: {test_r2:.4f}")
 print(f"Train RMSE: {train_rmse:.4f} | Test RMSE: {test_rmse:.4f}")
 ```
+
+| Metric | Train | Test |
+|:------|------:|-----:|
+| R² Score | 0.9634 | 0.9645 |
+| RMSE | 27,099.90 | 26,926.30 |
+
+
 ## Coefficients
 * ดึง preprocessor ออกมาจาก pipeline
 * ดึงชื่อฟีเจอร์ฝั่ง numeric หลัง PolynomialFeatures
