@@ -15,7 +15,7 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * เพื่อทำความเข้าใจปัจจัยที่ส่งผลต่อยอดขายรวม (Total Sales Drivers)
 * เพื่อประเมินประสิทธิภาพของโมเดลที่สร้างขึ้น (Model Performance Evaluation)
 * เพื่อระบุแนวโน้มเชิงธุรกิจและ Insight สำคัญ
-
+---
 ### Modelที่ใช้การทำนายในครั้งนี้
 
 ใช้ Ridge Regression ในการทำนาย เนื่องจาก
