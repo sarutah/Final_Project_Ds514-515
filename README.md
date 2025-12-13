@@ -22,7 +22,7 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * ป้องกันการ overfitting
 * เหมาะเมื่อมีฟีเจอร์ One-Hot
 * ตีความ Coefficients ได้ง่ายกว่า Lasso
-
+---
 ### Hypothesis
 
 H0 (Null Hypothesis): แต่ละช่องทางขายไม่มีผลแตกต่างกันต่อ Total Sales
