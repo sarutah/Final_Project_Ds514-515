@@ -46,5 +46,17 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * 20% สำหรับ test
 * random_state=42 ทำให้ผลลัพธ์เหมือนเดิมทุกครั้ง
 
-## Build Model
-## Ridge with Polynomial (numeric-only) + OneHot (categorical)
+## Build Model 
+### Ridge with Polynomial (numeric-only) + OneHot (categorical)
+* สร้าง sub-pipeline สำหรับคอลัมน์ประเภท categorical
+* สร้าง ColumnTransformer
+* กำหนด Parameter / ปรับ hyperparameter
+
+### GridSearchCV
+* แบ่ง train data ออกเป็น 5 folds
+* ลองรัน Ridge แต่ละ alpha
+* เลือก alpha ที่ดีที่สุด
+* fit data
+
+## Evaluate Best Model
+
