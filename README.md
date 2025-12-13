@@ -41,7 +41,7 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 <img width="337" height="238" alt="Sales medthod_colab" src="https://github.com/user-attachments/assets/cd4ce83f-b7ca-4a28-869b-dfde625f58cd" />
 
 
-## Preprocessing Data
+## ⚙️ Preprocessing Data
 
 ### กำหนด Target & Features
 
@@ -75,7 +75,7 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * เลือก alpha ที่ดีที่สุด
 * fit data
 
-## Evaluate Best Model
+## ⚙️ Evaluate Best Model
 เปรียบเทียบ Train Test เพื่อตรวจจับ Overfit
 
 ```python
@@ -100,7 +100,7 @@ print(f"Train RMSE: {train_rmse:.4f} | Test RMSE: {test_rmse:.4f}")
 | RMSE | 27,099.90 | 26,926.30 |
 
 
-## Coefficients
+## ⚙️ Coefficients
 * ดึง preprocessor ออกมาจาก pipeline
 * ดึงชื่อฟีเจอร์ฝั่ง numeric หลัง PolynomialFeatures
 * ดึงชื่อฟีเจอร์ฝั่ง categorical หลัง OneHotEncoder
