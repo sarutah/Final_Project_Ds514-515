@@ -59,4 +59,18 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * fit data
 
 ## Evaluate Best Model
+เปรียบเทียบ Train Test เพื่อตรวจจับ Overfit
 
+from sklearn.metrics import r2_score, mean_squared_error
+import numpy as np
+
+y_train_pred = best_model.predict(X_train)
+y_test_pred  = best_model.predict(X_test)
+
+train_r2 = r2_score(y_train, y_train_pred)
+test_r2  = r2_score(y_test, y_test_pred)
+train_rmse = np.sqrt(mean_squared_error(y_train, y_train_pred))
+test_rmse  = np.sqrt(mean_squared_error(y_test, y_test_pred))
+
+print(f"Train R2: {train_r2:.4f} | Test R2: {test_r2:.4f}")
+print(f"Train RMSE: {train_rmse:.4f} | Test RMSE: {test_rmse:.4f}")
