@@ -40,8 +40,12 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * Column ไหนเป็นตัวเลข = ไม่ต้องเข้ารหัส One-Hot
 * Column ไหนเป็นตัวหนังสือ = ต้องเข้ารหัส One-Hot
 
-Train-Test Split
+### Train-Test Split
 
 * 80% สำหรับ train
 * 20% สำหรับ test
 * random_state=42 ทำให้ผลลัพธ์เหมือนเดิมทุกครั้ง
+
+## Build Model
+
+Ridge with Polynomial (numeric-only) + OneHot (categorical)
