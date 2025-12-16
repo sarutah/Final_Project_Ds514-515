@@ -103,7 +103,8 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 -	จุดสูงสุดอยู่ช่วง May–July มีเทรนลงชัดเจนใน August–October ก่อนฟื้นตัวปลายปี มีความเสี่ยงจาก Seasonality
 -	Northeast ยอดขายสม่ำเสมอและเติบโตปลายปี แนวโน้มเพิ่มขึ้นชัดใน November–December ความผันผวนน้อยกว่า West เป็น Region ที่เสถียรและขยายได้ในระยะยาว
 -	 ทุก Region มีรูปแบบ Seasonality  ยอดขายโดยรวมสูงช่วง กลาง–ปลายปี
-<img width="556" height="353" alt="512Monthly Total Sales Trend by Region" src="https://i.postimg.cc/qR77pKpw/EDA-11.png" />
+<img width="1183" height="785" alt="EDA11" src="https://github.com/user-attachments/assets/454685cf-6cc4-43f5-bbbf-7d5d6da3385c" />
+
 
 
 
