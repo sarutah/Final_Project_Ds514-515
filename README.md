@@ -57,7 +57,7 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 - Sales และ Profit มีแนวโน้มเพิ่มขึ้นอย่างชัดเจนตั้งแต่ปี 2020 → 2021
 - เส้นแนวโน้ม (Trend line) ของทั้งสองตัวชี้วัดเป็น “ขาขึ้น” สะท้อนการเติบโตของธุรกิจโดยรวม
 --
-<img width="553" height="347" alt="Profit and Sales by month of date" src="https://github.com/user-attachments/assets/5c496673-9c57-4a7d-9206-86c57f3eb156" />
+<img width="553" height="347" alt="Profit and Sales by month of date" src="https://ibb.co/Y7Vxp1cd" />
 
 
 ### 6.ภาพรวมด้านสินค้า (Product Mix)
