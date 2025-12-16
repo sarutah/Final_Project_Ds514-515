@@ -25,7 +25,7 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 * ตีความ Coefficients ได้ง่ายกว่า Lasso
 
 ## ⚙️ EDA
-### วิเคราะห์ Correlation Matrix
+### 1.วิเคราะห์ Correlation Matrix
 - Units Sold เป็นปัจจัยหลักที่ขับเคลื่อน Total Sales และ Operating Profit
 - แสดงให้เห็นว่า ปริมาณการขาย เป็นตัวแปรสำคัญที่สุดในการเพิ่มทั้งยอดขายรวมและกำไรจากการดำเนินงาน
 
@@ -37,61 +37,61 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 2. จากความสัมพันธ์ของ Price per Unit กับ Total Sales ทำให้เห็นว่า ราคาแพงขึ้นไม่ได้แปลว่ายอดขายรวมสูงขึ้นเสมอ ต้องขึ้นกับ Units Sold เป็นปัจจัยหลัก
 3. Total Sales มีความสัมพันธ์สูงกับ Operating Profit
 
-### ช่องทาง In-store ยังสร้างยอดขายสูงสุด
+### 2.ช่องทาง In-store ยังสร้างยอดขายสูงสุด
 - ช่องทาง **In-store** ยังคงสร้างยอดขายรวมสูงสุด
 - สะท้อนว่าร้านหน้าร้านยังเป็นช่องทางหลักในการสร้างรายได้ของ Adidas
 - แม้พฤติกรรมผู้บริโภคจะเปลี่ยนไปสู่ดิจิทัลมากขึ้น แต่ยอดขาย Online ยังตามหลังช่องทางออฟไลน์
 
 <img width="337" height="238" alt="Sales medthod_colab" src="https://github.com/user-attachments/assets/cd4ce83f-b7ca-4a28-869b-dfde625f58cd" />
 
-### South มี Operating Margin สูงที่สุด
+### 3.South มี Operating Margin สูงที่สุด
 -	 แม้ยอดขายอาจไม่สูงสุด แต่ทำกำไรได้ดี การควบคุมต้นทุนมีประสิทธิภาพ เป็น Region ที่ มีคุณภาพของรายได้ (Profitability) สูง
 -	West ยอดขายสูง แต่ Margin ไม่ได้สูงที่สุด มีบางจุดที่ Outliers ต่ำ แสดงให้เห็นว่า อาจมีการแข่งขันด้านราคา หรือมีต้นทุนการขายสูง ดังนั้น West เป็น Volume-driven Region มากกว่า Margin-driven
 <img width="567" height="455" alt="Profit   Margin ตาม Region" src="https://github.com/user-attachments/assets/b3e2b2a6-fe7f-490f-9569-726d98f7990c" />
 
-### ทุก Region มีแนวโน้มฟื้นตัวชัดเจนในปี 2021
+### 4.ทุก Region มีแนวโน้มฟื้นตัวชัดเจนในปี 2021
 -	ยอดขายของทุก Region ฟื้นตัวชัดเจน และมีลักษณะ Seasonality โดยยอดขายสูงช่วงกลางถึงปลายปี
 <img width="846" height="430" alt="Trend ของ Total Sales ตามเวลา (แยก Region)" src="https://github.com/user-attachments/assets/780df98f-3bdc-412d-b735-b1f8a263cb12" />
 
-### แนวโน้มยอดขายและกำไร (2020 → 2021)
+### 5.แนวโน้มยอดขายและกำไร (2020 → 2021)
 - Sales และ Profit มีแนวโน้มเพิ่มขึ้นอย่างชัดเจนตั้งแต่ปี 2020 → 2021
 - เส้นแนวโน้ม (Trend line) ของทั้งสองตัวชี้วัดเป็น “ขาขึ้น” สะท้อนการเติบโตของธุรกิจโดยรวม
 --
 <img width="553" height="347" alt="Profit and Sales by month of date" src="https://github.com/user-attachments/assets/5c496673-9c57-4a7d-9206-86c57f3eb156" />
 
 
-### ภาพรวมด้านสินค้า (Product Mix)
+### 6.ภาพรวมด้านสินค้า (Product Mix)
 - **Men’s Street Footwear** ทำยอดขายสูงสุด → สะท้อนความนิยมรองเท้าแนว Lifestyle/Street ในกลุ่มลูกค้าชาย
 - **Women’s Apparel** ยังมีศักยภาพ → กลุ่มลูกค้าผู้หญิงมี Demand สูงในสินค้า Apparel มากกว่ารองเท้ากีฬา
 - **Women’s Athletic Footwear** มียอดขายต่ำสุด → อาจเกิดจาก Positioning/ความต้องการตลาดไม่ตรงกลุ่ม
 <img width="553" height="343" alt="Product and Sales" src="https://github.com/user-attachments/assets/735b89bf-0a7e-4a4c-8e70-363805910513" />
 
 
-### Units Sold เป็นตัวขับเคลื่อนยอดขายหลัก (Sales Driver)
+### 7.Units Sold เป็นตัวขับเคลื่อนยอดขายหลัก (Sales Driver)
 - เมื่อ **Units Sold เพิ่มขึ้น → Total Sales เพิ่มขึ้นตามอย่างชัดเจน**
 - แสดงให้เห็นว่า Units Sold เป็นตัวขับเคลื่อนหลักของ Total Sales
 <img width="377" height="344" alt="Correlation Sales and unit sold" src="https://github.com/user-attachments/assets/7b4cd31c-6ee7-4f5b-b377-7677f60b296e" />
 
-### Foot Locker และ West Gear เป็น Retailer หลักที่สร้างยอดขายสูงสุด 
+### 8.Foot Locker และ West Gear เป็น Retailer หลักที่สร้างยอดขายสูงสุด 
 -	แสดงให้เห็นว่า แสดงว่า Retailer กลุ่มนี้ มีฐานลูกค้าใหญ่ และเชี่ยวชาญสินค้า Street / Athletic
 -	Men’s Street Footwear เป็น “สินค้าทำเงินหลัก” ทุกช่องทาง เป็น Core Product ที่ขับเคลื่อน Total Sales
 -	ช่องทาง Online อย่าง Amazon และ Walmart มียอดขายต่ำกว่า
 -	แสดงให้เห็นว่า Retailer และ Product Category เป็นปัจจัยสำคัญที่ส่งผลต่อ Total Sales
 <img width="556" height="345" alt="512Total Sales by Retailer and Product Category" src="https://github.com/user-attachments/assets/b64ecf75-2c1e-4bb3-a70a-de8725cf0430" />
 
-### West เป็น Region ที่สร้างยอดขายสูงสุดอย่างชัดเจน 
+### 9.West เป็น Region ที่สร้างยอดขายสูงสุดอย่างชัดเจน 
 -	แสดงว่า ตลาดมีขนาดใหญ่, Demand สูง
 -	Northeast อยู่ในอันดับ 2 และเป็น Region ที่แข็งแรง ซึ่งมีศักยภาพในการ ขยายยอดขายเพิ่มเติม หากลงทุนเพิ่ม
 -	Midwest เป็น Region ที่ยอดขายต่ำสุด เป็น Region ที่ควรเร่งปรับกลยุทธ์ 
 <img width="521" height="346" alt="512Total Sales by Region" src="https://github.com/user-attachments/assets/833c7d9a-c7e9-460b-a817-a849f1021926" />
 
-### Region West ทำยอดขายสูงสุดเกือบทุก Product Category 
+### 10.Region West ทำยอดขายสูงสุดเกือบทุก Product Category 
 -	แสดงให้เห็นว่า มี Demand สูง,Product Mix แข็งแรงหลายหมวด
 -	Men’s Street Footwear คือสินค้าทำเงินอันดับ 1 ทุก Region เป็นสินค้า Mass + Lifestyle,ตอบโจทย์ลูกค้าหลากหลายกลุ่ม
 -	South มีขายในหมวดหมู่ Women’s Apparel สูงสุด ต่างจาก Region อื่นที่ Men’s Street Footwear นำ
 <img width="554" height="343" alt="512Total Sales by Product Category and Region" src= "https://github.com/sarutah/Final_Project_Ds514-515/blob/main/Total%20Sales%20and%20Region%20by%20Product_colab.png"/> 
 
-### Region West มียอดขายสูงสุด แต่มีความผันผวนสูงเช่นกัน 
+### 11.Region West มียอดขายสูงสุด แต่มีความผันผวนสูงเช่นกัน 
 -	จุดสูงสุดอยู่ช่วง May–July มีเทรนลงชัดเจนใน August–October ก่อนฟื้นตัวปลายปี มีความเสี่ยงจาก Seasonality
 -	Northeast ยอดขายสม่ำเสมอและเติบโตปลายปี แนวโน้มเพิ่มขึ้นชัดใน November–December ความผันผวนน้อยกว่า West เป็น Region ที่เสถียรและขยายได้ในระยะยาว
 -	 ทุก Region มีรูปแบบ Seasonality  ยอดขายโดยรวมสูงช่วง กลาง–ปลายปี
