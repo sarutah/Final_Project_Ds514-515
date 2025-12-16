@@ -89,7 +89,7 @@ link Source: https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-datas
 -	แสดงให้เห็นว่า มี Demand สูง,Product Mix แข็งแรงหลายหมวด
 -	Men’s Street Footwear คือสินค้าทำเงินอันดับ 1 ทุก Region เป็นสินค้า Mass + Lifestyle,ตอบโจทย์ลูกค้าหลากหลายกลุ่ม
 -	South มีขายในหมวดหมู่ Women’s Apparel สูงสุด ต่างจาก Region อื่นที่ Men’s Street Footwear นำ
-<img width="554" height="343" alt="512Total Sales by Product Category and Region" src="https://github.com/user-attachments/assets/e90c79b4-245e-4cfc-b20f-bfadd7d03c49" />
+<img width="554" height="343" alt="512Total Sales by Product Category and Region" src= "https://github.com/sarutah/Final_Project_Ds514-515/blob/main/Total%20Sales%20and%20Region%20by%20Product_colab.png"/> ..."https://github.com/user-attachments/assets/e90c79b4-245e-4cfc-b20f-bfadd7d03c49"
 
 ### Region West มียอดขายสูงสุด แต่มีความผันผวนสูงเช่นกัน 
 -	จุดสูงสุดอยู่ช่วง May–July มีเทรนลงชัดเจนใน August–October ก่อนฟื้นตัวปลายปี มีความเสี่ยงจาก Seasonality
